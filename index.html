@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<!--HTML is the backbone of every web page-->
+  <!--It has a head to import libraries, apis and important links or metadata -->
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>Word Orderer with jQuery</title>
+    <link  rel="stylesheet" href="bootstrap.min.css"/>
+    <script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script  src="jquery-3.0.0.js"></script>
+    <link rel="stylesheet" href="style.css" />
+       <script src="functions.js"></script>
+       <script src="script.js"></script>
+       
+  </head>
+  <!--It has a body for the content-->
+  <body>
+    <!--web pages are all consisted of boxes -->
+      <!--bootstrap organizes placement using the Grid Method-->
+        <div class = "container">
+          <!-- Each row consists of 12 columns -->
+          <div class = "row">
+            
+            <h2 class = "col-xs-8">Word Orderer</h2>
+            <h6 class = "col-xs-4">by: Kenneth J. Rosario</h6>
+             
+          </div>
+          
+          <div class = "row" style = 'margin-bottom:3px'>
+            <div class = "col-xs-12 col-sm-6" style = "margin-bottom:10px">
+              <button id = "Single">Enter Single Word</button>
+            </div>
+            <div class = "col-xs-12 col-sm-6" style='margin-bottom:4px'>
+              <button  id = "List">Enter Entire List</button>
+            </div>
+          </div>
+          <div class = "row extra-space-bottom">
+            <div id = "Result">
+              
+            </div>
+          </div>
+          <div class = "row">
+            <div id="current-list" class = "col-xs-12">
+              <h4>Current List</h4>
+              <hr style="margin-bottom:-5px">
+              <div id = "filter">
+
+              </div>
+              <div id = "list-component" >
+
+              </div>
+              <div id = "remove-all-button">
+
+              </div>
+          </div>
+        </div>
+        </div>
+      
+  </body>
+
+</html>

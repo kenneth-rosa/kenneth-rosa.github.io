@@ -1,0 +1,55 @@
+/* Styles go here */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@media all and (max-width: 600px) {
+  h6 { display: none; }
+  #even:hover{background-color:;}
+  #odd:hover{background-color:;}
+  #odd{ height:70px; }
+  #even{height:70px;}
+  #odd h4{margin-top: 30px; margin-left:5px;}
+  #even h4{margin-top: 30px; margin-left:5px;}
+ 
+  
+}
+body{
+	background-color: #E1EEF2;
+	font-family: 'Lato', serif; 
+}
+.extra-space-bottom{
+  margin-bottom: 5px;
+  
+}
+#even{
+	transition:1s;
+	padding: 5px;
+	
+	}
+
+#even:hover{
+	background-color:#F4D9D4;
+	transition: 1s
+	color:#C5C8F5;
+}
+#odd {
+	padding: 5px;
+	background-color: #9DC0CC;
+	transition: 1s;
+	
+	
+}
+
+.container{
+	overflow: hidden;
+	}
+#odd:hover{
+	background-color:#F4D9D4;
+	transition: 1s;
+}
+#remove-all-button{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
