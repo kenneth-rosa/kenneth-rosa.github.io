@@ -3,6 +3,7 @@
 function add(single,list){
   //add Single, List, sorted List, or a list after having an item removed
   function addToHtml () {
+	$("#list-component").html("")
       for (i in list){
     if(i%2===0){
     $("#list-component").append("<div id = 'even'> <h4>"+list[i]+"</h4></div>");
@@ -25,11 +26,8 @@ function add(single,list){
           if( a == b) return 0;
           return a < b ? -1 : 1;
       });
-    //borra lo anterior 
-    $("#list-component").html("")
   //inserta cada elemento aL arbol de HTML
     addToHtml()
-    
     } else{ 
 	alert("No value inputed")
 	} 
@@ -52,7 +50,6 @@ function add(single,list){
       alert("No value typed");
     }
   }else if(single==='filter'){
-    $("#list-component").html("");
     addToHtml();
   }
 }
